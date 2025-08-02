@@ -1,0 +1,77 @@
+Git and GitHub Command Cheat Sheet
+
+
+Basic Git Commands
+- git --version - Check installed Git version
+- git config --global user.name "Your Name" - Set your Git username
+- git config --global user.email "you@example.com" - Set your Git email
+- git init - Initialize a new Git repository
+- git status - Show the status of changes
+- git add <filename> - Stage a file for commit
+- git add . - Stage all changes
+- git commit -m "message" - Commit staged changes
+- git log - Show commit history
+- git diff - Show file differences (unstaged changes)
+
+
+Working with Remote Repositories (GitHub)
+- git remote add origin <url> - Connect local repo to GitHub repo
+- git push -u origin main - Push code to GitHub (first time)
+- git push - Push committed changes
+- git pull - Pull changes from remote to local
+- git clone <url> - Clone a remote repository locally
+
+
+CREATE BY CIACRPP  FROM LOCAL TO GITHUB
+📁 Create folder/project
+⬇
+🌱 git init
+⬇
+📦 git add .
+⬇
+📝 git commit -m "message"
+⬇
+🔗 git remote add origin <GitHub-URL>
+⬇
+🚀 git push -u origin main
+⬇
+✅ Done!
+
+
+FROM GITHUB TO LOCAL LEARN BY CCDW
+🌐 GitHub repo
+⬇
+🔗 git clone <URL>
+⬇
+📁 Local folder created
+⬇
+💻 Work locally (edit, test)
+⬇
+📤 (optional) git push
+
+
+
+
+
+Branching
+- git branch - List branches
+- git branch <branch-name> - Create new branch
+- git checkout <branch-name> - Switch to a branch
+- git checkout -b <branch-name> - Create and switch to new branch
+- git merge <branch> - Merge a branch into the current one
+- git branch -d <branch> - Delete a branch
+
+
+Undoing Changes
+- git reset <file> - Unstage a staged file
+- git reset --hard - Reset all changes (be careful!)
+- git revert <commit> - Create a new commit that undoes a previous one
+- git checkout -- <filename> - Discard changes in a file
+
+
+GitHub-Specific (via Browser)
+- Fork a repository
+- Create a pull request (PR)
+- Merge a PR
+- Add collaborators
+- Enable branch protection
